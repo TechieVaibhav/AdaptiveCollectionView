@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NumberPadHeaderView" id="U6b-Vx-4bR" customClass="NumberPadHeaderView" customModule="ContactPad" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t2d-yh-Oqz">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mX-rK-tsh">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="5mX-rK-tsh" firstAttribute="leading" secondItem="t2d-yh-Oqz" secondAttribute="leading" id="DRE-1c-HDv"/>
+                        <constraint firstAttribute="trailing" secondItem="5mX-rK-tsh" secondAttribute="trailing" id="GZH-3V-Q5C"/>
+                        <constraint firstItem="5mX-rK-tsh" firstAttribute="top" secondItem="t2d-yh-Oqz" secondAttribute="top" id="TyJ-hD-EKO"/>
+                        <constraint firstAttribute="bottom" secondItem="5mX-rK-tsh" secondAttribute="bottom" id="m76-Nc-ljB"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="t2d-yh-Oqz" secondAttribute="trailing" id="1Ia-Vk-QDa"/>
+                <constraint firstItem="t2d-yh-Oqz" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="9w1-ch-RfA"/>
+                <constraint firstAttribute="bottom" secondItem="t2d-yh-Oqz" secondAttribute="bottom" id="Aeg-4x-Kpp"/>
+                <constraint firstItem="t2d-yh-Oqz" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="RbY-l2-YoZ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <connections>
+                <outlet property="contentView" destination="t2d-yh-Oqz" id="LHP-2R-YMF"/>
+                <outlet property="lblNumber" destination="5mX-rK-tsh" id="dH2-wo-IAq"/>
+            </connections>
+        </collectionReusableView>
+    </objects>
+</document>
